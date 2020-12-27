@@ -2,6 +2,12 @@ const express = require('express')
 const app = express()
 const PORT = process.env.PORT || 4000
 
+//////////
+const expressLayouts = require('express-ejs-layouts')
+app.use(expressLayouts);
+///////
+
+
 const routes = require('./routes')
 //json
 // const nav = require('./navigation.json')
