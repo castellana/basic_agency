@@ -10,30 +10,33 @@ const router = express.Router()
 //     res.render('index', { nav })
 // })
 router.get('/', (req, res) => {
-    res.render('index')
+    res.render('index', { title: 'Home'})
 })
 
 
 router.get('/work', (req, res) => {
-    res.render('work')
+    res.render('work', { title: 'Work'})
 })
 
 router.get('/about', (req, res) => {
-    res.render('about')
+    res.render('about',{ title: 'About'})
 })
 
 router.get('/news', (req, res) => {
-    res.render('news')
+    res.render('news', { title: 'News'})
 })
 
 router.get('/thinking', (req, res) => {
-    res.render('thinking')
+    res.render('thinking', { title: 'Thinking'})
 })
 
 router.get('/contact', (req, res) => {
-    res.render('contact')
+    res.render('contact', { title: 'Contact'})
 })
 
+router.get('/aside', (req, res) => {
+    res.render('aside', { title: 'aside'})
+})
 
 
 
