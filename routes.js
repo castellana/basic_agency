@@ -3,7 +3,8 @@ const router = express.Router()
 
 // const nav = require('./nav.json')
 // const gallery = require('./gallery.json')
-// const news = require('./news.json')
+const newsdata = require('./newsdata.json')
+const thinkdata = require('./thinkdata.json')
 
 
 // router.get('/', (req, res) => {
@@ -23,11 +24,11 @@ router.get('/about', (req, res) => {
 })
 
 router.get('/news', (req, res) => {
-    res.render('news', { title: 'News'})
+    res.render('news', { title: 'News', newsdata})
 })
 
 router.get('/thinking', (req, res) => {
-    res.render('thinking', { title: 'Thinking'})
+    res.render('thinking', { title: 'Thinking', thinkdata})
 })
 
 router.get('/contact', (req, res) => {

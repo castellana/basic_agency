@@ -1,0 +1,12 @@
+<% thinkdata.forEach(thinkItem=> { %>
+    <article>
+        <img src="<%=thinkItem.thinkImage%>">
+        <div>
+            <p><%=thinkItem.thinkType%><br>
+            <%=thinkItem.edition%><br>
+            <%=thinkItem.title%></p>
+            <h6><%=thinkItem.date%></h6>
+        </div>
+        <img class="arrow" src="/assets/img/arrow-black.svg" alt="">
+    </article>
+<%})%>
