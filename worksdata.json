@@ -1,0 +1,57 @@
+{
+    "ECommerce": [
+        {
+        "ECommerceImg": "/assets/img/Google-Store.mp4",
+        "ECommerceTitle":"Google Store",
+        "ECommerceDescription":"AN ECOMMERCE EXPERIENCE HELPING GOOGLE BRING ITS HARDWARE TO PEOPLE ACROSS THE GLOBE"
+        },
+        {
+        "ECommerceImg": "/assets/img/Beats.jpg",
+        "ECommerceTitle":"Beats By Dre",
+        "ECommerceDescription": "ENGINEERING A DIGITAL DESTINATION THAT MOVES AT THE SPEED OF CULTURE"
+        }
+    ],
+
+    "Digital": [
+        {
+        "DigitalImg": "/assets/img/Fender.jpg",
+        "DigitalTitle":"Fender Academy",
+        "DigitalDescription":"A WEB SERVICE TO MAKE SALES TRAINING FEEL LESS LIKE WORK AND MORE LIKE PLAY"
+        },
+        {
+        "DigitalImg": "/assets/img/AMEX.jpg",
+        "DigitalTitle":"American Express",
+        "DigitalDescription":"LAYING A DESIGN FOUNDATION FOR FUTURE PRODUCTS AND SERVICES WITH THE OPEN APP"
+        }
+    ],
+    "Platforms": [
+        {
+        "PlatfoImg": "/assets/img/Riot.jpg",
+        "PlatfoTitle":"Riot Games",
+        "PlatfoDescription":"REVITALIZING THE RIOT GAMES BRAND WITH AN UPGRADED DIGITAL EXPERIENCE"
+        },
+        {
+        "PlatfoImg": "/assets/img/Softbank.jpg",
+        "PlatfoTitle":"SoftBank Vision Fund",
+        "PlatfoDescription":"BUILDING A DIGITAL DESTINATION FOR THE LEADING TECH INVESTMENT FUND"
+        }
+    ],
+    "Advertising": [
+        {
+        "AdverImg": "/assets/img/NERD.jpg",
+        "AdverTitle":"NERD Skincare",
+        "AdverDescription":"DEVELOPING A BRAND THAT BROUGHT SCIENCE TO BEAUTY IN BOLD, UNEXPECTED WAYS"
+        },
+        {
+        "AdverImg": "/assets/img/Beats.jpg",
+        "AdverTitle":"Brixton",
+        "AdverDescription":"HONORING THE PAST TO BUILD THE FUTURE OF THE BRIXTON BRAND"
+        }
+    ]
+}
+
+
+
+
+
+

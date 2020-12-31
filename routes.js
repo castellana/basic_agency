@@ -1,17 +1,17 @@
 const express = require('express')
 const router = express.Router()
 
-// const nav = require('./nav.json')
-// const gallery = require('./gallery.json')
 const newsdata = require('./newsdata.json')
 const thinkdata = require('./thinkdata.json')
+const featnewsdata = require('./featnewsdata.json')
+// const worksdata = require('./worksdata.json')
 
 
 // router.get('/', (req, res) => {
 //     res.render('index', { nav })
 // })
 router.get('/', (req, res) => {
-    res.render('index', { title: 'Home'})
+    res.render('index', { title: 'Home', featnewsdata})
 })
 
 
