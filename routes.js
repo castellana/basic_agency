@@ -5,6 +5,7 @@ const newsdata = require('./newsdata.json')
 const thinkdata = require('./thinkdata.json')
 const featnewsdata = require('./featnewsdata.json')
 // const worksdata = require('./worksdata.json')
+const asidedata = require('./asidedata.json')
 
 
 // router.get('/', (req, res) => {
@@ -36,7 +37,7 @@ router.get('/contact', (req, res) => {
 })
 
 router.get('/aside', (req, res) => {
-    res.render('aside', { title: 'aside'})
+    res.render('aside', { title: 'aside', asidedata})
 })
 
 

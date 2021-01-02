@@ -1,0 +1,37 @@
+[
+    {
+        "number": "01",
+        "image": "/assets/img/selected-work1.jpg",
+        "theme": "Culture Manual® ©2018",
+        "editor": "Agency Culture & Onboarding",
+        "description": "To help strengthen our culture and attract world class talent, we created the Culture Manual – an online guide for new hires that differentiates the employee onboarding process and builds alignment for our collective future."
+    },
+    {
+        "number": "02",
+        "image": "/assets/img/selected-work2.jpg",
+        "theme": "Moves® ©2019",
+        "editor": "Our New HQ",
+        "description": "When we moved into our new HQ, we put together a site experience providing an in-depth look into the two-year process imagining, designing, and developing our new office we call home."
+    },
+    {
+        "number": "03",
+        "image": "/assets/img/selected-work3.jpg",
+        "theme": "Culture Manual® ©2018",
+        "editor": "Agency Culture & Onboarding",
+        "description": "To help strengthen our culture and attract world class talent, we created the Culture Manual – an online guide for new hires that differentiates the employee onboarding process and builds alignment for our collective future."
+    },
+    {
+        "number": "04",
+        "image": "/assets/img/selected-work4.jpg",
+        "theme": "Culture Manual® ©2018",
+        "editor": "Agency Culture & Onboarding",
+        "description": "To help strengthen our culture and attract world class talent, we created the Culture Manual – an online guide for new hires that differentiates the employee onboarding process and builds alignment for our collective future."
+    },
+    {
+        "number": "05",
+        "image": "/assets/img/selected-work5.jpg",
+        "theme": "Culture Manual® ©2018",
+        "editor": "Agency Culture & Onboarding",
+        "description": "To help strengthen our culture and attract world class talent, we created the Culture Manual – an online guide for new hires that differentiates the employee onboarding process and builds alignment for our collective future."
+    }
+]
