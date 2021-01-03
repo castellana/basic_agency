@@ -1,32 +1,35 @@
-<main>
-    <nav>
-        <a href="/" class="logo-b"></a>
+<!-- <section id="header" class="light">
+    <nav class="light">
+        <a id="logo-black" href="/"></a> -->
 
-        <ul>
-            <li><a class="active" href="/work">Work</a></li>
+        <!-- <ul>
+            <li><a href="/work">Work</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/news">News</a></li>
             <li><a href="/thinking">Thinking</a></li>
             <li><a href="/contact">Contact</a></li>
+        </ul> -->
+
+        <!-- <a href="./aside" class="points"></a>
+    </nav>
+</section> -->
+
+<!-- navigation dynamic -->
+<!-- <section id="header" class="light">
+    <nav class="light">
+        <a id="logo-black" href="/"></a> -->
+
+        <ul>
+            <% nav.forEach(menuItem=> { %>  
+                <% if ( title == menuItem.name ) { %> 
+                    <li> <a class="active" href="<%= menuItem.url %>" ><%= menuItem.name %></a></li>
+                <% } else { %>
+                  <li> <a class="" href="<%= menuItem.url %>" ><%= menuItem.name %></a></li>
+                <% } %>
+            <% })%>
         </ul>
 
-        <a href="./aside" class="points"></a>
-
-        <!-- <label><img src="/assets/img/menu.svg" width="30" height="30" style="cursor:pointer"></label> -->
-        <!-- <input id="hamburger" type="checkbox" />
-        <label for="hamburger">
-            <img src="./assets/img/menu.svg" alt="">
-        </label>
-   
-
-    <article>
-        <div>
-        <h3>hola hola</h3>
-        <section class="item">
-            <h5>item1</h5>
-        </section>
-        </div>
-    </article> -->
-</nav>
-</main>
+        <!-- <a href="./aside" class="points"></a>
+    </nav>
+</section> -->
 

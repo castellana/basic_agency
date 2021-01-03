@@ -9,19 +9,14 @@ app.use(expressLayouts);
 
 
 const routes = require('./routes')
-//json
-// const nav = require('./navigation.json')
+
 
 
 app.use(express.static('public'))
 app.set('view engine', 'ejs')
  
-//express sucht automatisch in einem "views" Ordner nach den Templates. (Si lo quisiéramos tener en otra carpeta, tendríamos que decírselo a express)
 app.use(routes)
  
-// app.get('/', (req, res) => {
-//    res.render('index', {title: "Main"})
-// })
 
 app.use((req, res) => {
    res.status(404).render('./404');

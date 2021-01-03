@@ -1,7 +1,14 @@
 <%- include('./partials/head') %>
 
-<%- include('./partials/nav') %>
-<main>
+
+<body class="light">
+    <nav class="light">
+        <a id="logo-black" href="/"></a>
+        <%- include('./partials/nav') %>
+        <a href="./aside" class="points"></a>
+    </nav>
+
+    <main>
     <section id="news-hero">
         <h2 class="title-h1">NEWS</h2>
         <h2 class="title-h1">●</h2>
@@ -9,7 +16,8 @@
     <section id="news__items">
         <%- include('./partials/newsdata') %>
     </section>
+    </main>
 
-</main>
+</body>
 
-   <%- include('./partials/layoutlight')%>
+   <%- include('./partials/footerb')%>

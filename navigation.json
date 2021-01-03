@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Work",
+        "url": "/work"
+
+    },
+    {
+        "name": "About",
+        "url": "/about"
+
+    },
+    {
+        "name": "News",
+        "url": "/news"
+
+    },
+    {
+        "name": "Thinking",
+        "url": "/thinking"
+
+    },
+    {
+        "name": "Contact",
+        "url": "/contact"
+
+    }
+
+]
