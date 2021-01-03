@@ -9,7 +9,16 @@
         </article>
 
         <section class="aside-scroll">
-            <%- include('./partials/asidedata') %>
+            <% asidedata.forEach(asideItem=> { %>
+                <div class="vertical"><h6><%=asideItem.number%></h6></div>
+                <div class="aside__item">
+                    <img src="<%=asideItem.image%>">
+                    <h3><%=asideItem.theme%></h3>
+                    <h4><%=asideItem.editor%></h4>
+                    <p><%=asideItem.description%></p>
+                    <a class="rounded rlink-rosa" href="#">VISIT THE SITE</a>
+                </div>
+            <%})%>
         </section>
     </section>
 </section>

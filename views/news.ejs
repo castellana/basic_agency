@@ -14,10 +14,22 @@
         <h2 class="title-h1">●</h2>
     </section>
     <section id="news__items">
-        <%- include('./partials/newsdata') %>
+       
+        <% newsdata.forEach(newsItem=> { %>
+            <article>
+                <img src="<%=newsItem.image%>">
+                <div>
+                    <p><%=newsItem.name%></p>
+                    <h6><%=newsItem.date%></h6>
+                </div>
+                <img class="arrow" src="/assets/img/arrow-black.svg" alt="">
+            </article>
+        <%})%>
     </section>
     </main>
 
 </section>
-
-   <%- include('./partials/footerb')%>
+<footer class="dark">
+    <%- include('./partials/footer')  %>
+</footer>
+   <%# include('./partials/footerb')%>
