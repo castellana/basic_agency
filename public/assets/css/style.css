@@ -382,7 +382,7 @@ border-top: 2px solid #f9cdcd;
 
 .work__item p {
     width: 60%;
-    font-size: .8rem;
+    font-size: .7rem;
 }
 
 .gridSec-bline {
@@ -732,8 +732,8 @@ footer h2{
     font-size: 2.5rem;
 }
 
-.footer__connect a{
-    text-decoration: underline;
+#connect__link{
+    border-bottom: 2px solid currentColor;
 }
 
 footer h3 {
