@@ -6,29 +6,15 @@
 @font-face {
     font-family: 'SctoGroteskA-Medium';
     src: url("/assets/fonts/SctoGroteskA-Medium.woff2");
-    /* como si fuera font-weight: 600; */
+    /* ===font-weight: 600; */
 }
 
 @font-face {
     font-family: "SctoGroteskA-Regular";
     src: url("/assets/fonts/SctoGroteskA-Regular.woff2");
-    /* para usar sola ó con fweight 400 o menor*/
+    /* fweight <=400 */
 }
 
-/*********/
-/* h1: 3rem, medium */
-/*.title-h1: medium, 3rem*/
-/*h5 regular*/
-/*#engagements h3: bold*/
-/* .engage-item h5: 'SctoGroteskA-Bold'*/
-/*work__intro h4: bold;*/
-/*#featuredNews p: fz 1.3rem*/
-/*.work__intro h5: margin-bottom: 30vh; bold */
-/*.work__item h5 bold;*/
-/*.contact__emails h3 { 1.6rem;'SctoGroteskA-Bold'*/
-/*.about-facts_grid h4 {1.1rem;'SctoGroteskA-Bold'*/
-
-/*layouts*/
 
 * {
     padding: 0;
@@ -118,7 +104,6 @@ nav ul li a{
 
 /****INDEX PAGE****/
 h1{
-    /* font-family: 'SctoGroteskA-Medium';  */
     font-family: 'SctoGroteskA-Bold';
     font-size: 7rem;
     line-height: 16vh;
@@ -132,6 +117,7 @@ h1{
 #hero {
     padding-top: 5vh;
 }
+
 #hero .title-h1 {
     text-align: right;
 }
@@ -200,6 +186,7 @@ h1{
 #engagements {
     margin-top: 10vh;
 }
+
 #engagements h3, #featuredNews h3 {
     margin: 5vh 0;
     max-width: 24%;
@@ -290,8 +277,7 @@ h1{
     display: grid;
     grid-template-columns: 1fr 1.4fr 0.6fr;
     gap: 2%;
-    padding: 4vh 0;
-
+    padding: 3vh 0 5vh;
 }
 
 #news__items, #thinking-items{
@@ -354,7 +340,7 @@ border-top: 2px solid #f9cdcd;
     padding: 10vh 0;
 }
 
-#workSec p {
+#work-hero p, .work__intro p {
     font-size: 1.5rem;
 }
 
@@ -381,8 +367,9 @@ border-top: 2px solid #f9cdcd;
 }
 
 .work__item p {
-    width: 60%;
-    font-size: .7rem;
+    width: 53%;
+    font-size: 1.2rem;
+    font-family: 'SctoGroteskA-Medium';
 }
 
 .gridSec-bline {
@@ -536,7 +523,7 @@ border-top: 2px solid #f9cdcd;
 .about__award h3 {
     padding-bottom: 7vh;
     font-size: 2.9rem;
-    line-height: 4vh;
+    line-height: 5vh;
     font-weight: 300;
 }
 
@@ -595,6 +582,8 @@ border-top: 2px solid #f9cdcd;
 
 #thinking-intro h6 {
     font-size: 1.5rem;
+    padding-top: 3vh;
+    line-height: 3.5vh;
 }
 
 /******** CONTACT Page ********/
@@ -706,6 +695,10 @@ figcaption{
     padding: 0 0 2vh;
 }
 
+#stay h3 {
+    font-family: 'SctoGroteskA-Bold'
+}
+
 #stay input[type="email"]::placeholder {
     color: #252422;
 }
@@ -724,12 +717,12 @@ footer article{
 }
 
 #footer-logo {
-    height: 4vh;
+    height: 3.5vh;
 }
 
 footer h2{
-    width: 80%;
-    font-size: 2.5rem;
+    width: 90%;
+    font-size: 2.4rem;
 }
 
 #connect__link{
@@ -770,13 +763,14 @@ footer h3::before {
 
 input[type="email"] {
     width: 100%;
-    height: 3rem;
+    height: 4rem;
     color: currentColor;
     display: block;
     border: none;
     border-bottom: 2px solid currentColor;
     background: transparent;
     font-size: 1.5rem;
+    padding-top: 2vh;
 }
 
 .copyright{
@@ -806,6 +800,7 @@ input[type="email"] {
 .dark a {
     color: #f4f4f4;
 }
+
 .dark #footer-logo  {
     background: url('/assets/img/footer-logo.svg') left / contain no-repeat;  
 }
