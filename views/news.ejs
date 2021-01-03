@@ -9,27 +9,26 @@
     </nav>
 
     <main>
-    <section id="news-hero">
-        <h2 class="title-h1">NEWS</h2>
-        <h2 class="title-h1">●</h2>
-    </section>
-    <section id="news__items">
-       
-        <% newsdata.forEach(newsItem=> { %>
-            <article>
-                <img src="<%=newsItem.image%>">
-                <div>
-                    <p><%=newsItem.name%></p>
-                    <h6><%=newsItem.date%></h6>
-                </div>
-                <img class="arrow" src="/assets/img/arrow-black.svg" alt="">
-            </article>
-        <%})%>
-    </section>
+        <section id="news-hero">
+            <h2 class="title-h1">NEWS</h2>
+            <h2 class="title-h1">●</h2>
+        </section>
+        <section id="news__items">
+        
+            <% newsdata.forEach(newsItem=> { %>
+                <article>
+                    <img src="<%=newsItem.image%>">
+                    <div>
+                        <p><%=newsItem.name%></p>
+                        <h6><%=newsItem.date%></h6>
+                    </div>
+                    <img class="arrow" src="/assets/img/arrow-black.svg" alt="">
+                </article>
+            <%})%>
+        </section>
     </main>
-
 </section>
+
 <footer class="dark">
     <%- include('./partials/footer')  %>
 </footer>
-   <%# include('./partials/footerb')%>

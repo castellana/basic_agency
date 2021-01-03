@@ -82,10 +82,19 @@
     
     <section id="featuredNews" class="rosa">
         <h3>FEATURED NEWS</h3>
-        <%- include('./partials/featnewsdata') %>
+        <% featnewsdata.forEach(featnewsItem=> { %>
+            <article>
+                <img src="<%=featnewsItem.image%>">
+                <div>
+                    <p><%=featnewsItem.name%></p>
+                    <h6><%=featnewsItem.date%></h6>
+                </div>
+                <img class="arrow" src="/assets/img/arrow-black.svg" alt="">
+            </article>
+        <%})%>
     </section>
 </section>
 <footer class="dark">
     <%- include('./partials/footer')  %>
 </footer>
-    <%# include('./partials/footerb') %>
+

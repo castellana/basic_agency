@@ -92,6 +92,7 @@ nav ul li a{
     color: #252422;
     font-size: 1.1rem;
     text-transform: uppercase;
+    font-family: 'SctoGroteskA-Medium';
 }
 
 .active {
@@ -117,16 +118,20 @@ nav ul li a{
 
 /****INDEX PAGE****/
 h1{
-    font-family: 'SctoGroteskA-Medium'; 
+    /* font-family: 'SctoGroteskA-Medium';  */
+    font-family: 'SctoGroteskA-Bold';
     font-size: 7rem;
     line-height: 16vh;
 }
 
 .title-h1 {
-    font-family: 'SctoGroteskA-Medium'; 
+    font-family: 'SctoGroteskA-Bold'; 
     font-size: 7rem;
 }
 
+#hero {
+    padding-top: 5vh;
+}
 #hero .title-h1 {
     text-align: right;
 }
@@ -136,7 +141,8 @@ h1{
 }
 
 #intro h6 {
-    font-size: 1.3rem
+    font-size: 1.3rem;
+    padding-top: 2vh;
 }
 
 .intro-description {
@@ -148,7 +154,7 @@ h1{
 .intro-description h3 {
     font-family: 'SctoGroteskA-Medium';
     width: 50%;
-    padding: 10vh 0;
+    padding: 7vh 0;
     font-size: 3rem;
 }
 
@@ -158,9 +164,9 @@ h1{
 
 .rounded {
     border-radius: 50px;
-    padding: 1vh 5%;
-    font-size: 1.2rem;
-    font-family: 'SctoGroteskA-Medium';
+    padding: 1vh 4%;
+    font-size: 1.1rem;
+    font-family: 'SctoGroteskA-Bold';
 }
 
 .rlink-light {
@@ -191,8 +197,11 @@ h1{
     padding: 1.5vh 0;
 }
 
+#engagements {
+    margin-top: 10vh;
+}
 #engagements h3, #featuredNews h3 {
-    margin: 15vh 0;
+    margin: 5vh 0;
     max-width: 24%;
     font-family: 'SctoGroteskA-Bold';
     font-size: 3rem;
@@ -234,12 +243,9 @@ h1{
     font-size: 1.5rem;
     line-height: 4vh;
     margin: 3vh 0 8vh;
+    font-family: 'SctoGroteskA-Medium';
 }
 
-/* .black-rosa{
-    background: #252422;
-    color: #f9cdcd;
-} */
 #culture, #featuredNews{
     padding: 20vh 0 0;
     width: 90%;
@@ -253,11 +259,11 @@ h1{
 }
 
 #culture h2 {
-    line-height:12vh;
+    line-height: 12vh;
 }
 
 #culture h5{
-    margin-bottom: 12vh; 
+    margin: 3vh 0 12vh; 
     font-size: 1.5rem;
 }
 
@@ -277,6 +283,7 @@ h1{
 
 #culture video{
     width: 40%;
+    height: 85vh;
 }
 
 #featuredNews article,#thinking-items article, #news__items article{
@@ -284,7 +291,7 @@ h1{
     grid-template-columns: 1fr 1.4fr 0.6fr;
     gap: 2%;
     padding: 4vh 0;
-    /* margin-bottom: 20px; */
+
 }
 
 #news__items, #thinking-items{
@@ -320,6 +327,7 @@ border-top: 2px solid #f9cdcd;
 #featuredNews h6, #thinking-items h6, #news__items h6{
     word-spacing: 30px;
     font-size: 1.1rem;
+    font-family: 'SctoGroteskA-Medium'
 }
 
 #news-hero, #thinking-hero{
@@ -692,7 +700,7 @@ figcaption{
     padding: 2vh 0;
 }
 
-.social h3, #stay h3 {
+.social h3, .stay h3 {
     font-size: 1.8rem;
     font-family: 'SctoGroteskA-Medium';
     padding: 0 0 2vh;
@@ -729,6 +737,10 @@ footer h2{
 }
 
 footer h3 {
+    font-size: 1.6rem
+}
+
+.footer__links h3 {
     font-size: 2rem;
     padding-bottom: 2vh;
 }
