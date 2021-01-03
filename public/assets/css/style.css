@@ -473,8 +473,9 @@ border-top: 2px solid #f9cdcd;
     grid-template-columns: repeat(3, 1fr);
     margin: 5vh 0;
 }
-.work-services_grid:last-of-type {
+.work-services_grid:last-of-type, .contact-items_grid:last-of-type {
     margin: 5vh 0 0;
+    padding-bottom: 5vh;
 }
 .about-facts_grid .right, .contact-items_grid .right{
     justify-self: flex-end;
@@ -714,9 +715,8 @@ footer article{
     gap: 3%;
 }
 
-.footer-logo img{
+#footer-logo {
     height: 4vh;
-    /* color:  #252422 */
 }
 
 footer h2{
@@ -781,38 +781,35 @@ input[type="email"] {
     margin: 0 auto;
     padding: 3vh 0;
 }
+
 .copyright h6 {
     font-size: 0.9rem;
 }
-
-
-
 
 .dark {
     background: #252422;
     color: #f4f4f4;
 }
+
 .dark a {
     color: #f4f4f4;
 }
-.dark .footer-logo  {
-    background-image: url('/assets/img/footer-logo.svg') left / contain no-repeat;
+.dark #footer-logo  {
+    background: url('/assets/img/footer-logo.svg') left / contain no-repeat;  
 }
 
 .dark footer input[type="email"]::placeholder {
     color: currentColor;
 }
 
-.flight {
-    color: #252422;
+.light #footer-logo  {
+    background: url('/assets/img/footer-logo-bg-white.svg') left / contain no-repeat;
 }
 
 .light a{
     color: #252422;
 }
-.light .footer-logo  {
-    background-image: url('/assets/img/footer-logo-bg-white.svg') left / contain no-repeat;
-}
+
 .light footer a {
     color: #252422;
 }
