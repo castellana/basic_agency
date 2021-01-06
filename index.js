@@ -5,6 +5,7 @@ const expressLayouts = require('express-ejs-layouts')
 app.use(expressLayouts);
 
 const routes = require('./routes')
+const nav = require('./navigation.json')
 
 
 app.use(express.static('public'))
@@ -14,7 +15,7 @@ app.use(routes)
  
 
 app.use((req, res) => {
-   res.status(404).render('./404');
+   res.status(404).render('./404', { title: '404', nav});
 });
 
 

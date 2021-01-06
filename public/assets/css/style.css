@@ -416,7 +416,7 @@ border-top: 2px solid #f9cdcd;
     align-items: center;
 }
 
-#about-gallery article{
+#about-gallery article {
     height: 140vh;
     position: relative;
 }
@@ -425,7 +425,11 @@ border-top: 2px solid #f9cdcd;
     width: 100%;
 }
 
-#about-gallery article figure{
+#page404 article img{
+    width: 60%;
+}
+
+#about-gallery article figure, #page404 article figure{
     position: absolute;
     width: 40%;
 }
@@ -436,25 +440,30 @@ border-top: 2px solid #f9cdcd;
     z-index: 3;
 }
 
-#about-gallery figure:nth-of-type(2){
+#about-gallery figure:nth-of-type(2), #page404 figure:nth-of-type(2){
     top: 39vh;
     left: 20%;
     z-index: 4;
 }
 
-#about-gallery figure:nth-of-type(3){
+#about-gallery figure:nth-of-type(3), #page404 figure:nth-of-type(3){
     top: 22vh;
     left: 28%;
     z-index: 2;
     display: flex;
 }
 
-#about-gallery figure:nth-of-type(4){
-    top: 52vh;
+#about-gallery figure:nth-of-type(4), #page404 figure:nth-of-type(4){
+    top: 41vh;
     left: 46%;
     z-index: 1;
 }
 
+#page404 figure:nth-of-type(5){
+    top: 10vh;
+    left: 5%;
+    z-index: 5;
+}
 #about-gallery article figure:hover{
     z-index: 5;
 }
@@ -934,4 +943,32 @@ input[type="email"] {
 
 .aside-scroll::-webkit-scrollbar-thumb:hover {
     background-color: #000;
+}
+
+
+#page404 {
+    background:  #f9cdcd;
+    color: #252422;
+}
+#page404 a {
+    color: #252422
+}
+#page404 .points {
+    color: #252422;
+    background: url('/assets/img/menu.svg') right / contain no-repeat;
+}
+#page404 article{
+    height: 100vh;
+    position: relative;
+}
+.no-found {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+}
+#broke p {
+    padding-bottom: 3vh;
+}
+#broke a:hover {
+    color: #f9cdcd;
 }
