@@ -23,6 +23,7 @@
     text-decoration: none;
     font-family: 'SctoGroteskA-Regular';
 }
+
 h4 {
     font-family: 'SctoGroteskA-Medium';
 }
@@ -739,11 +740,11 @@ footer h2{
 }
 
 footer h3 {
-    font-size: 1.6rem
+    font-size: 1.6rem;
+    text-transform: uppercase;
 }
 
 .footer__links h3 {
-    font-size: 2rem;
     padding-bottom: 2vh;
 }
 
@@ -971,4 +972,84 @@ input[type="email"] {
 }
 #broke a:hover {
     color: #f9cdcd;
+}
+
+@media only screen and (max-width: 1450px) {
+    h1 {
+        font-size: 6rem;
+        line-height: 12vh;
+    }
+    .intro-description h3 {
+        font-size: 2.5rem;
+    }
+    #branding {
+        width: 16%;
+    }
+    .engage-item p {
+        font-size: 1.3rem;
+    }
+    .title-h1 {
+        font-size: 6rem;
+        line-height: 12vh;
+    }
+    #featuredNews p, #thinking-items p, #news__items p {
+        font-size: 2.5rem;
+        line-height: 5vh;
+    }
+    footer h2 {
+        font-size: 2rem;
+    }
+    .footer h3 {
+        font-size: 1.4rem;
+    }
+    #about-hero h3 {
+        font-size: 2.4rem;
+    }
+    .about__award h3 {
+        font-size: 2.4rem;
+    }
+    .fact__title {
+        font-size: 2.6rem;
+        font-family: 'SctoGroteskA-Medium';
+    }
+    .about-facts_grid h4 {
+        font-size: 1.6rem;
+    }
+    .about__award {
+        width: 70%;
+    }
+    .fact_list li {
+        font-size: 1.2rem;
+    }
+    .awards-hover h3 {
+        font-size: 5.3rem;
+    }
+    #featuredNews article, #thinking-items article, #news__items article {
+        grid-template-columns: 1fr 1.6fr 0.4fr;
+    }
+    #news-hero, #thinking-hero {
+        padding: 15vh 0 10vh;
+    }
+    #thinking-intro h4 {
+        font-size: 1.8rem;
+    }
+    #thinking-intro h6 {
+        font-size: 1.2rem;
+    }
+    .contact__emails h3 {
+        font-size: 1.3rem;
+    }
+    .contact-intro p {
+        margin: 3vh 0 10vh;
+    }
+    .aside__item img {
+        width: 350px;
+        height: 50vh;
+    }
+    .aside__item h3 {
+        font-size: 1.5rem;
+    }
+    .aside__item h4, .aside__item p{
+        font-size: 0.9rem;
+    }
 }
