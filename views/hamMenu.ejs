@@ -1,10 +1,19 @@
 <%- include ('./partials/head') %>
-<section id="hamMenu">
-    <ul>
-        <li><a href="./work">Work</a></li>
-        <li><a href="./about">About</a></li>
-        <li><a href="./news">News</a></li>
-        <li><a href="./thinking">Thinking</a></li>
-        <li><a href="./contact">Contact</a></li>
-    </ul>
+<section class="rosa">
+    <nav>
+        <a id="logo-white" href="/"></a>
+        <%- include('./partials/nav') %>
+        <button class="close-button" onclick="history.back()"><img id="close-img" src="/assets/img/close.svg" alt="menu"></button>
+    </nav>
+
+    <section id="hamMenu" class="hidden">
+        <ul>
+            <li><a href="./work">Work</a></li>
+            <li><a href="./about">About</a></li>
+            <li><a href="./news">News</a></li>
+            <li><a href="./thinking">Thinking</a></li>
+            <li><a href="./contact">Contact</a></li>
+            <li><a href="./aside">Initiatives</a></li>
+        </ul>
+    </section>
 </section>

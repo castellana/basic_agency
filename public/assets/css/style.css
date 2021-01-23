@@ -842,7 +842,7 @@ input[type="email"] {
 
 
 /****page ASIDE*****/
-#aside {
+#aside, #hamMenu {
     background: #252422;
     color: #f9cdcd;
     height: 100vh;
@@ -1074,9 +1074,26 @@ input[type="email"] {
     }
     .hidden {
         display: unset;
+        font-size: 1.5rem;
     }
     #naviLinks {
         display: none;
+    }
+    #hamMenu ul {
+        height: 100vh;
+        width: 90%;
+        margin: 5vh auto;
+    }
+    #hamMenu li {
+        height: 7vh;
+    }
+    #hamMenu a {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+    #logo-white {
+        width: 100px;
+        height: 32px;
     }
 }
 

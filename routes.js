@@ -37,6 +37,8 @@ router.get('/aside', (req, res) => {
     res.render('aside', { title: 'aside', asidedata})
 })
 
-
+router.get('/hamMenu', (req, res) => {
+    res.render('hamMenu', { title: 'HamMenu', nav})
+})
 
 module.exports = router
