@@ -478,6 +478,11 @@ border-top: 2px solid #f9cdcd;
     grid-template-columns: repeat(3, 1fr);
     margin: 5vh 0;
 }
+
+.one-column {
+    display: none;
+}
+
 .work-services_grid:last-of-type, .contact-items_grid:last-of-type {
     margin: 5vh 0 0;
     padding-bottom: 5vh;
@@ -975,6 +980,9 @@ input[type="email"] {
 }
 
 @media only screen and (max-width: 1450px) {
+    main {
+        background: red;
+    }
     h1 {
         font-size: 6rem;
         line-height: 12vh;
@@ -1051,5 +1059,151 @@ input[type="email"] {
     }
     .aside__item h4, .aside__item p{
         font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    h1 {
+        font-size: 2.5rem;
+        line-height: 6vh;
+    }
+    .title-h1 {
+        font-size: 2.5rem;
+        line-height: 6vh;
+    }
+    #intro h6 {
+        font-size: .7rem;
+    }
+    .hero-bline, .intro-bline {
+        border-bottom: 1px solid #252422;
+    }
+    .intro-bline {
+        padding: 5vh 0;
+    }
+    .intro-description h3 {
+        font-size: 1.5rem;
+        width: unset;
+        font-family: 'SctoGroteskA-Regular';
+    }
+    .intro-description {
+        display: unset;
+    }
+    #branding {
+        width: 30%;
+    }
+    .rounded {
+        font-size: .8rem;
+        padding: 1vh 7%;
+        font-family: 'SctoGroteskA-Regular'
+    }
+    #engagements {
+        margin-top: 3vh;
+    }
+    #engagements h3, #featuredNews h3 {
+        font-size: 1.8rem;
+        margin: 5vh 0 7vh;
+    }
+    .line-small {
+        height: 1px;
+        margin-bottom: 6vh;
+    }
+    .engage-item h5 {
+        font-family: 'SctoGroteskA-Regular';
+        font-size: 1.2rem;
+    }
+    .line-fit {
+        width: 250px;
+    }
+    .engage-item p {
+        font-size: 1rem;
+        font-family: 'SctoGroteskA-Regular';
+    }
+    #culture {
+        flex-direction: column;
+        padding: 2vh 0 0;
+    }
+    #culture div {
+        order: 2;
+    }
+    #culture video {
+        width: 100%;
+        order: 1;
+    }
+    #culture h2 {
+        line-height: 6vh;
+    }
+    #culture h5 {
+        font-size: 1rem;
+        margin-bottom: 6vh;
+    }
+    #featuredNews article, #thinking-items article, #news__items article {
+        grid-template-columns: unset;
+    }
+    #featuredNews article div {
+        display: contents;
+    }
+    #featuredNews p, thinking-items p, #news__items p {
+        font-size: 1.8rem;
+        padding-bottom: 7vh;
+    }
+    footer article {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__links {
+        display: flex;
+        flex-direction: column;
+    }
+    footer h2 {
+        font-size: 1.5rem;
+        padding: 6vh 0;
+    }
+    footer h2 br {
+        content: '';
+    }
+    footer h3 {
+        font-size:  1.2rem;
+    }
+    input[type="email"]{
+        border-bottom: 1px solid currentColor;
+        font-size: 1.2rem;
+        margin-bottom: 6vh;
+    }
+    .footer__links h3 {
+        padding: 4vh 0 2vh;
+    }
+    .copyright {
+        margin: 8vh 0 0;
+    }
+    .copyright div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .copyright h6{
+        font-size: 0.8rem;
+    }
+    #about-hero {
+        grid-template-columns: 1fr;
+    }
+    #about-hero h3 {
+        font-size: 1.7rem;
+    }
+    .section-rline {
+        border-bottom: 1px solid #f9cdcd;
+    }
+    #about-gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+    }
+    #about-gallery p {
+        order:2
+    }
+    #about-gallery article {
+        order: 1;
+        height: 90vh;
+    }
+    #about-gallery article figure, #page404 article figure {
+        width: 50%;
     }
 }
