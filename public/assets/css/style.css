@@ -274,7 +274,7 @@ h1{
     height: 85vh;
 }
 
-#featuredNews article,#thinking-items article, #news__items article{
+#featuredNews article, #thinking-items article, #news__items article{
     display: grid;
     grid-template-columns: 1fr 1.4fr 0.6fr;
     gap: 2%;
@@ -1063,6 +1063,9 @@ input[type="email"] {
 }
 
 @media only screen and (max-width: 767.98px) {
+    main {
+        background: blue;
+    }
     h1 {
         font-size: 2.5rem;
         line-height: 6vh;
@@ -1142,6 +1145,9 @@ input[type="email"] {
     #featuredNews article div {
         display: contents;
     }
+    #featuredNews article, #thinking-items article {
+        border-top: 1px solid #f9cdcd;
+    }
     #featuredNews p, thinking-items p, #news__items p {
         font-size: 1.8rem;
         padding-bottom: 7vh;
@@ -1183,7 +1189,7 @@ input[type="email"] {
         font-size: 0.8rem;
     }
     #about-hero {
-        grid-template-columns: 1fr;
+        display: unset;
     }
     #about-hero h3 {
         font-size: 1.7rem;
@@ -1254,5 +1260,20 @@ input[type="email"] {
     }
     .awards-hover {
         padding: 5vh 0;
+    }
+    #news__items article {
+        border-top: 1px solid #252422;
+    }
+    #thinking-intro {
+        display: unset;
+    }
+    #thinking-intro h4 {
+        font-size: 1.6rem;
+    }
+    #featuredNews p, #thinking-items p, #news__items p {
+        font-size: 2rem;
+    }
+    #featuredNews h6, #thinking-items h6, #news__items h6 {
+        padding-top: 4vh;
     }
 }
