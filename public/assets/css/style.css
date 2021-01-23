@@ -1206,4 +1206,53 @@ input[type="email"] {
     #about-gallery article figure, #page404 article figure {
         width: 50%;
     }
+    figcaption {
+        font-size: 1rem;
+    }
+    #about-facts img {
+        width: 100%;
+    }
+    .fact__title {
+        font-size: 1.7rem;
+        grid-column: span 3;
+    }
+    .one-column {
+        display: flex;
+        justify-content: space-between;
+    }
+    .about-facts_grid {
+        display: unset;
+    }
+    .about-facts_grid h2 {
+        font-size: 3rem;
+        order: 1;
+    }
+    .one-column {
+        display: flex;
+        padding-bottom: 4vh;
+    }
+    .about-facts_grid h4 {
+        order: 2;
+        padding-top: 8vh;
+        font-size: 1.4rem;
+    }
+    .about__award {
+        width: 90%;
+    }
+    .about__award h3 {
+        font-size: 2rem;
+    }
+    .about-facts_grid div {
+        margin-right: unset;
+    }
+    .about-hover h3 {
+        font-size: 2rem;
+    }
+    .awards-hover span {
+        transform: translate(-.5rem);
+        font-size: .7rem;
+    }
+    .awards-hover {
+        padding: 5vh 0;
+    }
 }
