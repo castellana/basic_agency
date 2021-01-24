@@ -616,17 +616,24 @@ border-top: 2px solid #f9cdcd;
 #contact-hero img{
     height: 100vh;
     width: 100%;
+    grid-row: span 2
 }
 
-.contact-intro {
+/* .contact-intro {
     display: flex;
     flex-direction: column;
+} */
+#contactSlogan {
+    grid-column: 2 / 3;
 }
-
-.contact-intro p{
+#contactSlogan p {
     max-width: 35%;
     margin: 3vh 0 15vh;
 }
+/* .contact-intro p{
+    max-width: 35%;
+    margin: 3vh 0 15vh;
+} */
 
 .contact__emails {
     display: grid;
@@ -1223,6 +1230,42 @@ input[type="email"] {
     .copyright h6{
         font-size: 0.8rem;
     }
+    #work-hero p{
+        margin-left: unset;
+        width: unset;
+    }
+    .work-services_grid, .contact-items_grid {
+        display: unset
+    }
+    .work__intro {
+        border-right: none;
+    }
+    .work__intro h3 {
+        padding: 5vh 0;
+        font-size: 1.8rem;
+        width: 90%;
+    }
+    .work__intro p {
+        font-size: 1rem;
+    }
+    .work__item p {
+        font-size: .8rem;
+        font-family: SctoGroteskA-Regular;
+        width: 60%;
+    }
+    .scrollArticle{
+        display: flex;
+        overflow-x: scroll;
+        margin: 5vh 0;
+    }
+    .work__item img, .work__item video, .office__item img {
+        width: unset;
+        height: 50vh;
+        margin-bottom: unset;
+    }
+    .work__item h4 {
+        font-size: 1.5rem;
+    }
     #about-hero {
         display: unset;
     }
@@ -1310,5 +1353,45 @@ input[type="email"] {
     }
     #featuredNews h6, #thinking-items h6, #news__items h6 {
         padding-top: 4vh;
+    }
+    /*** Contact page ****/
+    #contact-hero {
+        display: flex;
+        flex-direction: column;
+    }
+    #contactSlogan {
+        order: 1;
+        width: 100%;
+    }
+    #contactSlogan p {
+        max-width: 100%;
+        margin: 3vh 0;
+    }
+    #contact-hero img {
+        order: 2;
+        height: unset;
+    }
+    .contact__emails {
+        order: 3;
+        margin-top: 5vh;
+    }
+    .contact__emails h2 {
+        font-size: 2rem;
+    }
+    .contact__emails h3 {
+        font-size: .8rem;
+    }
+    .contact__emails a, .social a {
+        font-size: 1rem;
+    }
+    .office__title{
+        border-right: none;
+    }
+    .office__item figcaption {
+        display: none;
+    }
+    .grid-bline {
+        border-bottom: 1px solid #252422;
+        margin-bottom: 5vh;
     }
 }
