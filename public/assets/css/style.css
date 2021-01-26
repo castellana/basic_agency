@@ -82,7 +82,6 @@ nav ul li{
 }
 
 nav ul li a{
-    /* color: inherit; */
     font-size: 1.1rem;
     text-transform: uppercase;
     font-family: 'SctoGroteskA-Medium';
@@ -91,10 +90,6 @@ nav ul li a{
 .active {
     border-bottom: 2px solid currentColor;
 }
-
-/* .rosa a {
-    color: inherit;
-} */
 
 .points {
     height: 1vh;
@@ -133,26 +128,33 @@ h1{
     width: 100%;
 }
 
+#intro {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+}
 #intro h6 {
     font-size: 1.3rem;
     padding-top: 2vh;
+    grid-column: span 2;
 }
 
 .intro-description {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start
 }
 
 .intro-description h3 {
     font-family: 'SctoGroteskA-Medium';
-    width: 50%;
+    width: 90%;
     padding: 7vh 0;
     font-size: 3rem;
 }
 
 #branding{
-    width: 22%;
+    width: 60%;
+    align-self: center;
+    justify-self: end;
 }
 
 .rounded {
@@ -386,10 +388,6 @@ border-top: 2px solid #f9cdcd;
 
 
 /*********PAGE ABOUT************/
-/* #about, #thinking {
-    background: #252422;
-    color:#f9cdcd; 
-} */
 #about-hero{
     padding: 10vh 0 0;
     display: grid;
@@ -664,7 +662,6 @@ border-top: 2px solid #f9cdcd;
 }
 
 .contact__emails a, .social a{
-    /* color: #252422; */
     font-size: 1.4rem;
     text-decoration: underline;
 }
@@ -825,10 +822,6 @@ input[type="email"] {
     color: #f4f4f4;
 }
 
-/* .dark a {
-    color: #f4f4f4;
-} */
-
 .dark #footer-logo  {
     background: url('/assets/img/footer-logo.svg') left / contain no-repeat;  
 }
@@ -840,16 +833,6 @@ input[type="email"] {
 .light #footer-logo  {
     background: url('/assets/img/footer-logo-bg-white.svg') left / contain no-repeat;
 }
-
-/* .light a{
-    color: #252422;
-} */
-
-/* .light footer a {
-    color: #252422;
-} */
-
-
 
 /****page ASIDE*****/
 #aside, #hamMenu {
@@ -993,9 +976,6 @@ input[type="email"] {
 }
 
 @media only screen and (max-width: 1450px) {
-    /* main {
-        background: red;
-    } */
     h1 {
         font-size: 6rem;
         line-height: 12vh;
@@ -1004,7 +984,7 @@ input[type="email"] {
         font-size: 2.5rem;
     }
     #branding {
-        width: 16%;
+        width: 27%;
     }
     .engage-item p {
         font-size: 1.3rem;
@@ -1108,9 +1088,6 @@ input[type="email"] {
 }
 
 @media only screen and (max-width: 767.98px) {
-    /* main {
-        background: blue;
-    } */
     h1 {
         font-size: 2.5rem;
         line-height: 6vh;
@@ -1128,16 +1105,18 @@ input[type="email"] {
     .intro-bline {
         padding: 5vh 0;
     }
+    #intro {
+        display: flex;
+        flex-direction: column;
+    }
     .intro-description h3 {
         font-size: 1.5rem;
         width: unset;
         font-family: 'SctoGroteskA-Regular';
     }
-    .intro-description {
-        display: unset;
-    }
     #branding {
         width: 30%;
+        align-self: flex-end;
     }
     .rounded {
         font-size: .8rem;
@@ -1342,6 +1321,9 @@ input[type="email"] {
     .awards-hover {
         padding: 5vh 0;
     }
+    .awards-hover h3 {
+        font-size: 2.1rem;
+    }
     #news__items article {
         border-top: 1px solid #252422;
     }
@@ -1350,6 +1332,7 @@ input[type="email"] {
     }
     #thinking-intro h4 {
         font-size: 1.6rem;
+        padding-top: 2vh;
     }
     #featuredNews p, #thinking-items p, #news__items p {
         font-size: 2rem;
@@ -1398,9 +1381,6 @@ input[type="email"] {
         margin-bottom: 5vh;
     }
 
-    #aside {
-        height: 110vh;
-    }
     #aside article {
         padding: 2vh 0 1vh;
         display: flex;
@@ -1439,7 +1419,6 @@ input[type="email"] {
     }
     .aside__item p {
         display: block;
-        font-size: .8rem;
         font-weight: 400;
         width: 95%;
     }
