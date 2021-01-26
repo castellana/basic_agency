@@ -24,6 +24,9 @@
     font-family: 'SctoGroteskA-Regular';
 }
 
+a {
+    color: inherit;
+}
 h4 {
     font-family: 'SctoGroteskA-Medium';
 }
@@ -79,7 +82,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #252422;
+    /* color: inherit; */
     font-size: 1.1rem;
     text-transform: uppercase;
     font-family: 'SctoGroteskA-Medium';
@@ -89,9 +92,9 @@ nav ul li a{
     border-bottom: 2px solid currentColor;
 }
 
-.rosa a {
-    color: #f9cdcd
-}
+/* .rosa a {
+    color: inherit;
+} */
 
 .points {
     height: 1vh;
@@ -661,7 +664,7 @@ border-top: 2px solid #f9cdcd;
 }
 
 .contact__emails a, .social a{
-    color: #252422;
+    /* color: #252422; */
     font-size: 1.4rem;
     text-decoration: underline;
 }
@@ -822,9 +825,9 @@ input[type="email"] {
     color: #f4f4f4;
 }
 
-.dark a {
+/* .dark a {
     color: #f4f4f4;
-}
+} */
 
 .dark #footer-logo  {
     background: url('/assets/img/footer-logo.svg') left / contain no-repeat;  
@@ -838,13 +841,13 @@ input[type="email"] {
     background: url('/assets/img/footer-logo-bg-white.svg') left / contain no-repeat;
 }
 
-.light a{
+/* .light a{
     color: #252422;
-}
+} */
 
-.light footer a {
+/* .light footer a {
     color: #252422;
-}
+} */
 
 
 
@@ -1253,7 +1256,7 @@ input[type="email"] {
         font-family: SctoGroteskA-Regular;
         width: 60%;
     }
-    .scrollArticle{
+    .work-services_grid article {
         display: flex;
         overflow-x: scroll;
         margin: 5vh 0;
@@ -1393,5 +1396,59 @@ input[type="email"] {
     .grid-bline {
         border-bottom: 1px solid #252422;
         margin-bottom: 5vh;
+    }
+
+    #aside {
+        height: 110vh;
+    }
+    #aside article {
+        padding: 2vh 0 1vh;
+        display: flex;
+        flex-direction: column;
+    }
+    #aside article h3 {
+        font-size: .7rem;
+        text-transform: uppercase;
+        width: 90%;
+        margin: 0 auto 1vh;
+    }
+    .aside__item img {
+        width: 300px;
+        height: 45vh;
+    }
+    .aside-scroll {
+        padding: 1vh 2%;
+    }
+    .close-button {
+        order: 1;
+        align-self: flex-end;
+    }
+    #aside article h3:first-of-type {
+        order: 2;
+    }
+    #aside article h3:nth-of-type(2) {
+        order: 3;
+        
+    }
+    #aside article h3 br {
+        display: none;
+        
+    }
+    .aside__item h3 {
+        font-size: 1.1rem;
+    }
+    .aside__item p {
+        display: block;
+        font-size: .8rem;
+        font-weight: 400;
+        width: 95%;
+    }
+    .aside__item a {
+        display: none;
+    }
+    .vertical h6 {
+        top: 75vh;
+        font-size: .8rem;
+        left: -7px;
     }
 }
